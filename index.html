@@ -1,219 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="top-header">
-      <a href="" class="logo">
-        <img height="80" width="150" src="img/FanCalendar_Logo.png" alt="" />
-      </a>
-      <ul class="Menu-Horizontal">
-        <li><a href="">INICIO</a></li>
-        <li>
-          SERVICIOS
-          <ul class="Menu-Vertical">
-            <li><a href="">EDICIÓN DE PLANES Y HORARIOS</a></li>
-            <li><a href="">REGISTRO DE EVENTOS</a></li>
-            <li><a href="">NOTIFICACIONES</a></li>
-          </ul>
-        </li>
-        <li><a href="">BENEFICIOS</a></li>
-        <li><a href="">CONTACTANOS</a></li>
-      </ul>
-    </nav>
-    <!--Seccion Inicio-->
-    <section class="seccion-inicio">
-      <div class="cont-gral-inicio">
-        <div class="cont-ini-texto">
-          <h1>Bienvenidos a Fan-Calendar!!!</h1>
-          <h2>Registra y descubre nuevos eventos</h2>
-        </div>
-        <div class="cont-ini-img">
-          <img height="400" width="400" src="img/Cinema_Logo.png" alt="" />
-        </div>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Acceso Restringido</h2>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Clave de Acceso (ok)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
       </div>
     </section>
-    <!--Seccion Servicios1-->
-    <section class="seccion-servicios1">
-      <div class="cont-gral-servicios1">
-        <div class="cont-sec-texto1">
-          <h2>Servicios</h2>
-          <h1>Edición de Planes Y Horarios</h1>
-          <h2>
-            ------------------------------------------------------------------
-          </h2>
-          <h2>
-            En nuestra plataforma, podrá crear diversos planes, en los cuales se
-          </h2>
-          <h2>
-            podrá crear diversos horarios con eventos y otras cosas registradas
-          </h2>
-        </div>
-        <div class="cont-sec-img1">
-          <img height="400" width="400" src="img/Calendario1.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <!--Seccion Servicios2-->
-    <section class="seccion-servicios2">
-      <div class="cont-gral-servicios2">
-        <div class="cont-sec-texto2">
-          <h1>Registro de Eventos</h1>
-          <h2>
-            ------------------------------------------------------------------
-          </h2>
-          <h2>En nuestra plataforma, se podrá registrar</h2>
-          <h2>todos los eventos de su preferencia,</h2>
-          <h2>al mismo tiempo que las fechas de las peliculas</h2>
-          <h2>que están en cartelera</h2>
-        </div>
-        <div class="cont-sec-img2">
-          <img height="300" width="500" src="img/Cartel1.png" alt="" />
-        </div>
-        <div class="cont-sec-img3">
-          <img height="400" width="300" src="img/Poster3.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <!--Seccion Servicios3-->
-    <section class="seccion-servicios3">
-      <div class="cont-gral-servicios3">
-        <div class="cont-sec-texto3">
-          <h1>Notificaciones</h1>
-          <h2>
-            ------------------------------------------------------------------
-          </h2>
-          <h2>Además, la plataforma siempre te va a recordar</h2>
-          <h2>todo el contenido de tus planes mediante</h2>
-          <h2>notificaciones diarias</h2>
-        </div>
-        <div class="cont-sec-img4">
-          <img height="300" width="300" src="img/Campana.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <!--Seccion Beneficios-->
-    <section class="seccion-beneficios">
-      <div class="cont-gral-beneficios">
-        <div class="cont-ben-texto">
-          <h1>Beneficios</h1>
-          <h2>
-            ------------------------------------------------------------------
-          </h2>
-          <h2>-> En 1er lugar, nuestra plataforma es completamnete gratis</h2>
-          <h2>
-            -> En 2do lugar, contamos con una interfaz sencilla de entender
-          </h2>
-          <h2>
-            -> En 3er lugar, después de 2 meses de servicio, puedes ingresar a
-          </h2>
-          <h2>un sorteo los eventos del momento</h2>
-        </div>
-        <section class="cont-ben-video">
-          <div class="cont-serv-video"></div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/uBUcfmfI4Kk?si=dvzL7n7TfOH77wZO"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-        </section>
-      </div>
-    </section>
-  <!--Seccion Contactanos-->
-  <section class="seccion-formulario">
-<div class="div-cont-formulario">
-  <h1>Contactanos</h1>
-  <h2>Complete todos los campos:</h2>
-  <form class="formulario">
-    <!--Inputs = Text-->
-    <div class="campo">
-      <label form="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
-    </div>
-    <!--Lista despegable-->
-    <div class="campo">
-    <label form="pais">Pais:</label>
-    <select id="pais" name="pais">
-      <option value="">Seleccione pais</option>
-      <option value="perú">Perú</option>
-      <option value="colombia">Colombia</option>
-      <option value="brazil">Brazil</option>
-      <option value="mexico">Mexico</option>
-      <option value="argentina">Argentina</option>
-      <option value="paraguay">Paraguay</option>
-    </select>
-    </div>
-    <!--Lista checkbox-->
-    <div class="campo">
-      <label>Intereses:</label>
-      <ul class="checkbox">
-          <li><label><input type="checkbox" name="intereses" value="peliculas">Peliculas</label></li>
-          <li><label><input type="checkbox" name="intereses" value="series">Series</label></li>
-          <li><label><input type="checkbox" name="intereses" value="anime">Anime</label></li>
-      </ul>
-    </div>
-    <!--Lista radio-->
-    <div class="campo">
-      <label>Sexo:</label>
-      <ul class="lista-radio">
-        <li><label><input type="radio" name="sexo" value="masculino">Masculino</label></li>
-          <li><label><input type="radio" name="sexo" value="femenino">Femenino</label></li>
-      </ul>
-    </div>
-    <button type="submit">Enviar</button>
-  </form>
-</div>
-  </section>
-  <!-- Pie de Pagina -->
-  <section id="footer">
-    <footer class="footer">
-      <div class="footer-container">
-      <!-- Redes sociales con íconos personalizados -->
-      <div class="footer-social">
-        <h1>Síguenos</h1>
-        <a href="#"
-        ><img height="100" width="100"
-          src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-          alt="Facebook"
-          class="social-icon"
-      /></a>
-      <a href="#"
-        ><img height="100" width="100"
-          src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-          alt="Twitter"
-          class="social-icon"
-      /></a>
-      </div>
-      <!-- Enlaces legales -->
-      <div class="footer-links">
-        <h1>Legal</h1>
-        <a href="/Documentos/3.politica-privacidad.pdf"
-          >Política de Privacidad</a
-            >
-          <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
-            </div>
-        <!-- Logo y nombre de sitio -->
-        <div class="footer-brand">
-          <img height="200" width="350" src="img/FanCalendar_Logo.png" alt="" />
-          <p>FanCalendar</p>
-          <small>© 2025 Todos los derechos reservados</small>
-        </div>
-      </div>
-    </footer>
-  </section>
+
+    <script src="login.js"></script>
   </body>
 </html>
