@@ -9,13 +9,13 @@
   min-height: 100vh;
   width: 100%;
   /* Fondo atractivo para la vista de escritorio */
-  background: linear-gradient(135deg, #cba011 0%, #fce625 100%);
+  background: linear-gradient(135deg, #cfa414 0%, #8d6e06 100%);
   padding: 1.25rem; /* 20px de padding */
 }
 
 /* La caja del formulario */
 .login-box {
-  background: rgb(199, 176, 47);
+  background: rgb(21, 52, 78);
   padding: 2.5rem; /* 40px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
@@ -26,7 +26,7 @@
 
 .login-box h2 {
   margin-bottom: 1.5625rem; /* 25px */
-  color: #333;
+  color: #ffffff;
   font-size: 1.8rem;
   font-family: "Science Gothic", sans-serif;
 }
@@ -42,7 +42,7 @@
   display: block;
   margin-bottom: 0.5rem; /* 8px */
   font-weight: bold;
-  color: #555;
+  color: #807e7e;
 }
 
 .input-group input {
